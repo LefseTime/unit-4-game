@@ -17,50 +17,54 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h1>Kitty Collector</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Kitty Collector</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Instructions:
+                    <br> A random goal number will generate at the start of each round.
+                    <br> Each of the four kitties below will generate a random hidden point value at the start of each round.
+                    Click a kitty to add their point value to your current number.
+                    <br> Match your current number to the goal number to win the round. If your current number exceeds the goal
+                    number, you lose the round.
+                    <br>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="goal">Goal: </h3>
+            </div>
+            <div class="col-md-4">
+                <h3 class="current">Current: 0</h3>
+            </div>
+            <div class="col-md-4">
+                <h3 class="win"></h3>
+                <h3 class="lose"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/turkey.jpg" class="img-fluid img-thumbnail turkey" val="1" alt="Fluffy orange cat staring down roast turkey.">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/box.jpg" class="img-fluid img-thumbnail box" val="2" alt="Maru the cat's head poking out of a box.">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/lion.jpg" class="img-fluid img-thumbnail lion" val="3" alt="Kitty wearing a lion hat.">
+            </div>
+            <div class="col-md-3">
+                <img src="assets/images/naked.jpg" class="img-fluid img-thumbnail naked" val="4" alt="An adorable wrinkly sphynx cat that looks like an old man.">
+            </div>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-12">
-            <p>
-                Instructions: <br>
-                A random goal number will generate at the start of each round.<br>
-                Each of the four kitties below will generate a random hidden point value at the start of each round. Click the kitty to add the point value to your current number.<br>
-                Match your current number to the goal number to win the round. If your current number exceeds the goal number, you lose the round.<br>
-            </p>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-4">
-            <h3 class="goal">Goal: </h3>
-        </div>
-        <div class="col-md-4">
-            <h3 class="current">Current: 0</h3>
-        </div>
-        <div class="col-md-4">
-            <h3 class="win">Wins: 0</h3>
-            <h3 class="lose">Losses: 0</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <img src="assets/images/turkey.jpg" class="img-fluid img-thumbnail turkey" val="1">
-        </div>
-        <div class="col-md-3">
-            <img src="assets/images/box.jpg" class="img-fluid img-thumbnail box" val="2">
-        </div>
-        <div class="col-md-3">
-            <img src="assets/images/lion.jpg" class="img-fluid img-thumbnail lion" val="3">
-        </div>
-        <div class="col-md-3">
-            <img src="assets/images/naked.jpg" class="img-fluid img-thumbnail naked" val="4">
-        </div>
-    </div>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

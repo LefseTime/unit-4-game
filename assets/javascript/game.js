@@ -1,7 +1,7 @@
 $(document).ready(function () {
     
-    //generate random goal number 19-120 and write in html
-    var goalNumber = Math.floor(Math.random() * 102) + 19;
+    //generate and display random goal number 19-120
+    var goalNumber = Math.floor(Math.random() * 101) + 19;
     // console.log(goalNumber);
     $(".goal").text("Goal: " + goalNumber);
 
@@ -13,6 +13,10 @@ $(document).ready(function () {
     var boxNumber = Math.floor(Math.random() * 11) + 1;
     var lionNumber = Math.floor(Math.random() * 11) + 1;
     var nakedNumber = Math.floor(Math.random() * 11) + 1;
+
+    //display win and loss numbers
+    $(".win").text("Wins: " + winNumber);
+    $(".lose").text("Losses: " + loseNumber);
 
     //when turkey clicked
     $(".turkey").on("click", function() {
@@ -52,13 +56,13 @@ $(document).ready(function () {
 
     //when goal and current match
     if ( currentNumber === goalNumber ) {
-        winNumber += winNumber;
+        winNumber++;
         $(".win").text("Wins: " + winNumber);
         console.log(winNumber);
     }
     //when current exceeds goal
     else if ( currentNumber > goalNumber ) {
-        loseNumber += loseNumber;
+        loseNumber++;
         $(".lose").text("Losses: " + loseNumber);
         console.log(loseNumber);
     }
