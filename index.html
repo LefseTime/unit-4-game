@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Kitty Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
+
 <body>
-    
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Kitty Collector</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Instructions: <br>
+                A random goal number will generate at the start of each round.<br>
+                Each of the four kitties below will generate a random hidden point value at the start of each round. Click the kitty to add the point value to your current number.<br>
+                Match your current number to the goal number to win the round. If your current number exceeds the goal number, you lose the round.<br>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="goal">Goal: </h3>
+        </div>
+        <div class="col-md-4">
+            <h3 class="current">Current: 0</h3>
+        </div>
+        <div class="col-md-4">
+            <h3 class="win">Wins: 0</h3>
+            <h3 class="lose">Losses: 0</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="assets/images/turkey.jpg" class="img-fluid img-thumbnail turkey" val="1">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/box.jpg" class="img-fluid img-thumbnail box" val="2">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/lion.jpg" class="img-fluid img-thumbnail lion" val="3">
+        </div>
+        <div class="col-md-3">
+            <img src="assets/images/naked.jpg" class="img-fluid img-thumbnail naked" val="4">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
