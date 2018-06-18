@@ -25,12 +25,16 @@ $(document).ready(function () {
         if (currentNumber === goalNumber) {
             winNumber++;
             $(".win").text("Wins: " + winNumber);
+            var audio = new Audio (src="assets/audio/kittenWin.mp3")
+            audio.play();
             reset();
         }
         //when current exceeds goal
         else if (currentNumber > goalNumber) {
             loseNumber++;
             $(".lose").text("Losses: " + loseNumber);
+            var audio = new Audio (src="assets/audio/kittenLose.mp3")
+            audio.play();
             reset();
         }
         //else do nothing
